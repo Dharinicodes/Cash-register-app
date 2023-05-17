@@ -1,8 +1,82 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
+
+:root {
+  --dark-green: #85bb65;
+  --light-green: #ecfccb;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 55px;
+  text-align: center;
+  font-family: "Azeret Mono", monospace;
+  background-color: var(--light-green);
+}
+
+.heading {
+  color: var(--dark-green);
+}
+
+.description {
+  font-size: larger;
+  margin: 1rem;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  font-size: medium;
+}
+
+#error-message {
+  display: block;
+  font-size: larger;
+  margin: 1rem 0 0;
+}
+
+label {
+  padding: 1rem;
+  display: block;
+}
+
+input {
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  outline: var(--dark-green);
+  background-color: var(--dark-green);
+}
+
+button {
+  padding: 1rem;
+  border: none;
+  margin: auto;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  color: var(--light-green);
+  background-color: var(--dark-green);
+}
+
+.change-table {
+  width: 50%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.change-table caption {
+  margin: 1rem auto;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+th,
+td {
+  border: 3px solid var(--dark-green);
+  width: 0%;
+  border-collapse: collapse;
+  padding: 0.4rem;
 }
